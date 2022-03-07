@@ -14,6 +14,7 @@ public class UserController {
 	@RequestMapping(value = "/displayForm.htm", method = RequestMethod.GET)
 	public String displayForm(Model model) {
 		System.out.println("hi");
+		System.ou.println("this displayForm,commit in checking in jenkins for periodic changes");
 		int i = 10;
 		model.addAttribute("user", new User());
 		return "userForm";
